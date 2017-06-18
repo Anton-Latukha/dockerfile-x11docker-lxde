@@ -25,8 +25,6 @@ RUN apt-get install -y menu menu-xdg mime-support desktop-file-utils desktop-bas
 RUN apt-get install -y libxv1 mesa-utils mesa-utils-extra libgl1-mesa-glx libglew2.0 \
                        libglu1-mesa libgl1-mesa-dri libdrm2 libgles2-mesa libegl1-mesa
 
-RUN apt-get install -y procps
-
 # config for lxpanel, including replacement for lxsession-logout
 RUN mkdir -p /etc/skel/.config/lxpanel/default
 RUN echo '[Command]\n\
